@@ -1,0 +1,161 @@
+;; ===========================< Loadout >=============================
+;; To add items in the item lists:
+;; -------------------------------
+;; add a new line: "item_section			= value_1,value_2,value3" under the correct section below
+;; "item_section": is the section name of the your item. NOTE: don't make lines with the same "item_section", only the last one will be read
+;; "value_1": (boolean  value, must be true or false) determines wether this item should be added to player's inventory list (false) or to the loadout pick list (true)
+;; "value_2": (number) the amount of the said item
+;; "value_3": (number) how many points it requires
+;; "value_4": (number) what progression difficulty is this item locked at (2 means it's available for difficulty 1 and 2) [no value means its available for all difficulties]
+;; ========================================================
+;; put your custom items under "custom" section, they will always appear to pick from
+;; NOTE: you will get a single bolt only no matter how many you put in here, due to technical engine reasons
+
+[points]
+total_points_eco_1 = 1450
+total_points_eco_2 = 950
+total_points_eco_3 = 450
+
+[custom]
+
+[shared]:custom
+cash                = false,1,0
+device_pda_1        = false,1,0
+itm_backpack        = false,1,0
+bolt                = false,1,0
+
+bread               = true,2,50
+kolbasa             = true,2,50
+tomato              = true,2,60
+chili               = true,2,80
+cigarettes_russian  = true,1,80
+beans               = true,2,100
+cigarettes_lucky    = true,1,100
+
+flask               = true,2,25
+energy_drink        = true,1,50
+mineral_water       = true,1,50
+vodka               = true,2,60
+
+wpn_knife           = true,1,25
+wpn_knife2          = true,1,25
+wpn_axe             = true,1,150
+
+swiss_knife         = true,1,25
+box_matches         = true,1,25
+charcoal            = true,1,25
+cooking             = true,1,50
+grooming            = true,1,50
+kerosene            = true,1,50
+itm_sleepbag        = true,1,50
+army_bowler         = true,1,75
+fieldcooker         = true,1,100
+
+batteries_dead      = true,3,50
+device_flashlight   = true,1,60
+detector_geiger     = true,1,100
+detector_radio      = true,1,100
+device_torch_dummy  = true,1,100
+
+antirad             = true,1,50
+bandage             = true,4,50
+caffeine            = true,2,50
+drug_anabiotic      = true,1,50
+drug_coagulant      = true,1,75
+drug_psy_blockade   = true,1,75
+medkit              = true,2,75
+medkit_army         = true,1,100
+stimpack            = true,2,100
+stimpack_army       = true,2,150
+
+[stalker_loadout]:shared
+stalker_patch       = false,1,0
+
+[bandit_loadout]:shared
+bandit_patch        = false,1,0
+
+[ecolog_loadout]:shared
+ecolog_patch        = false,1,0
+
+[dolg_loadout]:shared
+dolg_patch          = false,1,0
+
+[freedom_loadout]:shared
+freedom_patch       = false,1,0
+
+[killer_loadout]:shared
+killer_patch        = false,1,0
+
+[army_loadout]:shared
+army_patch          = false,1,0
+
+[monolith_loadout]:shared
+monolith_patch      = false,1,0
+
+[csky_loadout]:shared
+csky_patch          = false,1,0
+
+[renegade_loadout]:shared
+renegade_patch      = false,1,0
+
+[greh_loadout]:shared
+greh_patch          = false,1,0
+
+[isg_loadout]:shared
+isg_patch           = false,1,0
+
+[zombied_loadout]:shared,stalker_loadout
+
+
+;; ===========================< Ammo >=============================
+;-- defined ammo type per weapon here (weapon section = ammo section) - Example: wpn_glock = ammo_9x19_fmj_bad
+;-- when a weapon in this section found in your inventory, you will be given the ammo stated for it
+;-- otherwise, ammo type will be the first one define in weapon's config
+[ammo_type_per_wpn]
+
+
+;-- define ammo count per ammo section (section = count) here - Example: ammo_9x19_fmj_bad = 60
+;-- When an ammo type is picked for a weapon in your inventory, it will be given to player by the count defined here
+;-- otherwise, ammo's count will be a full box size
+[ammo_count]
+
+
+;; ===========================< Money >=============================
+[stalker_money]
+money = 1000
+
+[bandit_money]
+money = 1000
+
+[ecolog_money]
+money = 1600
+
+[dolg_money]
+money = 1400
+
+[freedom_money]
+money = 1400
+
+[killer_money]
+money = 2000
+
+[army_money]
+money = 1200
+
+[monolith_money]
+money = 1600
+
+[csky_money]
+money = 1400
+
+[renegade_money]
+money = 800
+
+[greh_money]
+money = 1000
+
+[isg_money]
+money = 3000
+
+[zombied_money]
+money = 1000
