@@ -1,5 +1,5 @@
-bind accel kLSHIFT
-bind active_jobs kP
+bind accel kX
+bind active_jobs kZ
 bind artefact k7
 bind back kS
 bind buy_menu kB
@@ -8,12 +8,12 @@ bind cam_zoom_in kT
 bind console kGRAVE
 bind crouch kLCONTROL
 bind down kDOWN
-bind drop kG
 bind forward kW
-bind inventory kI
+bind freelook kLMENU
+bind inventory kTAB
 bind jump kSPACE
 bind left kLEFT
-bind llookout kQ
+bind llookout kE
 bind lstrafe kA
 bind pause kPAUSE
 bind quick_use_1 kF1
@@ -22,11 +22,11 @@ bind quick_use_3 kF3
 bind quick_use_4 kF4
 bind quit kESCAPE
 bind right kRIGHT
-bind rlookout kE
+bind rlookout kQ
 bind rstrafe kD
-bind scores kTAB
+bind scores kI
 bind screenshot kF12
-bind sprint_toggle kX
+bind sprint_toggle kLSHIFT
 bind quick_save kF5
 bind quick_load kF9
 bind torch kL
@@ -58,6 +58,7 @@ bind custom14 k8
 bind custom15 kU
 bind custom17 kF7
 bind custom18 mouse3
+bind custom19 kG
 bind safemode kB
 slot_0 medkit
 slot_1 bandage
@@ -71,10 +72,12 @@ g_crosshair_color (255, 255, 255, 255)
 g_crouch_toggle off
 g_dynamic_music off
 g_freelook_toggle off
-g_sprint_toggle on
+g_sprint_toggle off
 g_walk_toggle off
 g_lookout_toggle off
 g_simple_pda on
+g_use_tracers off
+hud_crosshair off
 r__detail_height 1
 r__framelimit 0
 r__optimize_dynamic_geom 1
@@ -133,4 +136,5 @@ rs_v_sync on
 snd_efx off
 snd_cache_size 256
 snd_targets 1024
-fov 75
+snd_volume_music 0.1
+fov 80
